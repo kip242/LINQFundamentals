@@ -9,7 +9,7 @@ namespace Queries
 		static void Main(string[] args)
 		{
 			//a deferred execution operator like "Where" is considered lazy, it won't execute until the foreach loop
-			//whereas "ToList()" is not, it will execute right away
+			//whereas "ToList()", "ToArray()", "Count()" are not, they will execute right away
 
 			//here we are calling our Random method, but it won't create an infinate loop because we are only "yielding" the first 10(.Take(10)) results
 			//this is because Take() is a streaming operator it only goes through the data until it gets the number of items it needs then stops
