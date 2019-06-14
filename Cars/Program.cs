@@ -288,10 +288,6 @@ namespace Cars
 			return query.ToList();
 		}
 
-		
-
-
-
 		public static List<Manufacturer> ProcessManufacturers(string filePath)
 		{
 			var query =
